@@ -5,7 +5,7 @@ import unoCSS from 'unocss/vite'
 export default defineConfig({
 	plugins: [sveltekit(),
 		unoCSS({
-			configFile: './uno.config.ts'
+			configFile: '../uno.config.ts'
 		})
 	]
 });
