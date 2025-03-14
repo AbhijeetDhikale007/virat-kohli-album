@@ -1,1 +1,3 @@
-// Reexport your entry components here
+import Ico from './Icons/Ico.svelte'
+
+export default Ico
