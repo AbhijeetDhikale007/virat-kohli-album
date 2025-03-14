@@ -3,14 +3,14 @@
     import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
     const slides = [
-        'Images1', 
+        'Image1', 'Image2'
     ]
 </script>
 
 <Splide options={ { rewind: true } } aria-label="My Favorite Images">
-    { #each slides as slide }
+    {#each slides as slide, index }
     <SplideSlide>
-      <img src={ slide.src } alt={ slide.alt }>
+      <img src='Images/Landscape/{ slide }.jpg' alt={ 'Picture'[index] }>
     </SplideSlide>
   { /each }
 </Splide>
